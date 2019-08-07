@@ -9,15 +9,20 @@
   <body>
     <h1>Recipe  Finder</h1>
     <h2>Here are your recipes for {{ recipe }} with {{ ingredients }}</h2>
-    {% for result in results.results %}
-      <section class='recipeResults'>
-        <div class='image'><img src='{{ result.thumbnail}}'></div>
-        <div class='title'><a class='link' href='{{ result.href }}'>{{ result.title }}</a></div>
-        <div class='ingredients'>{{ result.ingredients }}</div>
-      </section>
-    {% endfor %}
+    <section id='recipesSection'>
+      {% for result in results.results %}
+        <section class='recipeResults'>
+          <div class='image'><img src='{{ result.thumbnail}}'></div>
+          <div class='title'><a class='link' href='{{ result.href }}'>{{ result.title }}</a></div>
+          <div class='ingredients'>{{ result.ingredients }}</div>
+        </section>
+      {% endfor %}
+    </seciton>
     <form class="button" action="/" method="get">
       <input type="submit" value="Cook other recipe">
     </form>
+    <!-- <footer>&copy; 2019 - RecipeFinder</footer> -->
+    <script type="text/javascript" src='scripts/script.js'>
+    </script>
   </body>
 </html>
