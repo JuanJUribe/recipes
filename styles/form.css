@@ -1,15 +1,14 @@
 body{
-  background-image: url('https://d22ir9aoo7cbf6.cloudfront.net/wp-content/uploads/sites/2/2018/10/Saltwater-Halal-Restaurants-Singapore.png');
   margin: 0;
   height: 100vh;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 10% 10%  auto;
-  font-family: 'Opne Sans', serif;
+  font-family: 'Roboto', serif;
 }
 
 h1{
-  background-color: olive;
+  background-color: yellow;
   margin: 0;
   display: flex;
   align-items: center;
@@ -40,6 +39,7 @@ h2{
   border-style: outset;
   background-color: snow;
   margin: 15px;
+  padding: 10px;
 }
 
 .image{
@@ -59,11 +59,21 @@ h2{
   font-size: 120%;
 }
 
+.link {
+  color: Goldenrod;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: yellow;
+}
+
 .ingredients{
   grid-row: 2;
   grid-column: 2;
   font-style: italic;
 }
+
 .button{
   margin: 10px;
 }
